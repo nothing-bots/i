@@ -46,7 +46,7 @@ def _start(client, message):
                InlineKeyboardButton("💬 Support", url=f"https://t.me/{SUPPORT_GROUP}")
             ],
             [
-               InlineKeyboardButton("🛠 Source Code 🛠", url=f"https://{SOURCE_CODE}")
+               InlineKeyboardButton("🛠 Bot Hub 🛠", url=f"https:/t.me/botz_x_hub")
            ]]
         ),
         reply_to_message_id=message.message_id,
@@ -105,7 +105,7 @@ def map(pos):
                     InlineKeyboardButton(text="💬 Support", url=f"https://t.me/{SUPPORT_GROUP}")
                   ],
                   [
-                    InlineKeyboardButton(text="🛠 Source Code 🛠", url=f"https://{SOURCE_CODE}")
+                    InlineKeyboardButton(text="🛠 Bot Hub 🛠", url=f"https:/t.me/botz_x_hub")
                   ],
                   [
                     InlineKeyboardButton(text="◀️", callback_data=f"help+{pos-1}")
