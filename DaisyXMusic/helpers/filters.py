@@ -21,6 +21,9 @@ from pyrogram import filters
 
 from DaisyXMusic.config import COMMAND_PREFIXES
 
+from pyrogram import filters
+
+other_filters = filters.group & ~filters.via_bot & ~filters.forwarded
 
 
 
