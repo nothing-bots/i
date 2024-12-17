@@ -25,11 +25,12 @@ from DaisyXMusic.config import COMMAND_PREFIXES
 
 from pyrogram import Client, filters
 
-     @Client.on_message(filters.group & ~filters.via_bot & ~filters.forwarded)
-async def handle_message(client, message):
-    if message.edit_date:  # Checks if the message has been edited
-        # Your logic for edited messages
-        pass  
+# Define the function and apply the decorator to it
+@Client.on_message(filters.group & ~filters.via_bot & ~filters.forwarded)
+async def handle_group_message(client, message):
+    # Your logic here
+    pass
+
 
 from pyrogram import Client, filters
 
