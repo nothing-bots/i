@@ -23,20 +23,22 @@ from DaisyXMusic.config import COMMAND_PREFIXES
 
 from pyrogram import Client, filters
 
-@Client.on_message(filters.group & ~filters.via_bot & ~filters.forwarded)
+other_filters = (
+    @Client.on_message(filters.group & ~filters.via_bot & ~filters.forwarded)
 async def handle_message(client, message):
     if message.edit_date:  # Checks if the message has been edited
         # Your logic for edited messages
-        pass
+        pass  
+) 
 
-from pyrogram import Client, filters
 
+other_filters2 = ( 
 @Client.on_message(filters.private & ~filters.via_bot & ~filters.forwarded)
 async def handle_message(client, message):
     if message.edit_date:  # Checks if the message has been edited
         # Your logic for edited messages
         pass
-
+) 
 
 def command(commands: Union[str, List[str]]):
     return filters.command(commands, COMMAND_PREFIXES)
