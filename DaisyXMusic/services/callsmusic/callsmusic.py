@@ -16,18 +16,18 @@
 
 from typing import Dict
 
-from pytgcalls import GroupCallFactory
+from pytgcalls import GroupCall
 
 from DaisyXMusic.services.callsmusic import client
 from DaisyXMusic.services.queues import queues
 
-instances: Dict[int, GroupCallFactory] = {}
+instances: Dict[int, GroupCall] = {}
 active_chats: Dict[int, Dict[str, bool]] = {}
 
 
 def init_instance(chat_id: int):
     if chat_id not in instances:
-        instances[chat_id] = GroupCallFactory(
+        instances[chat_id] = GroupCall(
             client, outgoing_audio_bitrate_kbit=320
         ).get_file_group_call()
 
