@@ -24,7 +24,7 @@ if os.path.exists("local.env"):
     load_dotenv("local.env")
 
 que = {}
-SESSION_NAME = getenv("SESSION_NAME", "BQAf70YAkQUg5qcid-P8Fkp9DeNgpQ4EDMO5CeVJMahWLtg5twDqfhTg8vtcDSa_t7oe_qx_12VpZU1MEi6ml0GgZkl7Uujs3pBjD4cwED2VjuxdTOF5HJ3p3vuCzAputZRyaZRIwycr5h4LfYIyq2yQPq-myJIeWa4VUBjKbIZ96Oavq8kAIpjBi4mQBbiEfbasaCvBadvSQHUDAjiCYBi0msQAV7tBQ52EiNmqPZV9SGeJgEmbdnOg1fZAtfHFW7r028CkGS5GX_Z_HdtY_KXqzVza6HRmMQQWERRXutbVzKVlWr6akkrMS2Tg7tlsivIc9B08GtdwMVJnmIqpH3nKJi8jkQAAAAF4jONRAA")
+SESSION_NAME = getenv("SESSION_NAME", "session")
 BOT_TOKEN = getenv("BOT_TOKEN")
 BOT_NAME = getenv("BOT_NAME")
 UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "about_tosuu")
