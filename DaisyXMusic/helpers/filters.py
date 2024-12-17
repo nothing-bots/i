@@ -21,7 +21,14 @@ from pyrogram import filters
 
 from DaisyXMusic.config import COMMAND_PREFIXES
 
-other_filters = filters.group & ~filters.edited & ~filters.via_bot & ~filters.forwarded
+from pyrogram import Client, filters
+
+@Client.on_message(filters.group & ~filters.via_bot & ~filters.forwarded)
+async def handle_message(client, message):
+    if message.edit_date:  # Checks if the message has been edited
+        # Your logic for edited messages
+        pass
+
 other_filters2 = (
     filters.private & ~filters.edited & ~filters.via_bot & ~filters.forwarded
 )
