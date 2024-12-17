@@ -21,6 +21,8 @@ from pyrogram import filters
 
 from DaisyXMusic.config import COMMAND_PREFIXES
 
+
+
 from pyrogram import Client, filters
 
      @Client.on_message(filters.group & ~filters.via_bot & ~filters.forwarded)
@@ -29,6 +31,7 @@ async def handle_message(client, message):
         # Your logic for edited messages
         pass  
 
+from pyrogram import Client, filters
 
        @Client.on_message(filters.private & ~filters.via_bot & ~filters.forwarded)
 async def handle_message(client, message):
