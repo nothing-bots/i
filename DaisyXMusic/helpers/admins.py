@@ -10,7 +10,7 @@ async def jiosaavn(client, message):
     administrators = await get_administrators(message.chat)
     # Rest of your function logic
 
-async def get_administrators(chat: Chat) -> List[6848223695]:
+async def get_administrators(chat: Chat) -> List[int]:
     get = gett(chat.id)
 
     if get:
