@@ -24,7 +24,7 @@ if os.path.exists("local.env"):
     load_dotenv("local.env")
 
 que = {}
-SESSION_NAME = getenv("SESSION_NAME", "session")
+SESSION_NAME = getenv("SESSION_NAME", "BQAf70YAROjHzefCBhHgoe6ya0wnRS6Ztkm0-yGkdis-AXTr3kNmZYuXG2s2Bw9i6lnyOj5FVJpHWp8T8b6jbMuITI_wnn9WjY1F0hwOtPO8dLqlYffyrt89WsHK0Kdo86ZiCr-Bhr_HCE-uezdw5dUpGF48hOa5McjmVRqNNn7PmK3Ehi9EfZpmR_Hp-xK3Zlb2bpGQIVe-nyhVOcvF-xwWHpTf75z2KIdizRdZ4D02OZdafMS_xWrS2DaLj-pjATBue-ecXF2bKAxNhHuPrCT3X3QE4axtu7SuxhAV-VouP7bJYi_dgtzG26KBQVN569nBvpGHnAvH2vFUSqiDm_20hs8t1QAAAAHV9wluAA")
 BOT_TOKEN = getenv("BOT_TOKEN")
 BOT_NAME = getenv("BOT_NAME")
 UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "about_tosuu")
@@ -40,6 +40,6 @@ SOURCE_CODE = getenv("SOURCE_CODE", "github.com/TeamAlinaX/AlinaXMusic")
 DURATION_LIMIT = int(getenv("DURATION_LIMIT", "100"))
 ARQ_API_KEY = getenv("ARQ_API_KEY", None)
 PMPERMIT = getenv("PMPERMIT", None)
-LOG_GRP = getenv("LOG_GRP", None)
+LOG_GRP = getenv("LOG_GRP", "-1002291785414")
 COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/ !").split())
 SUDO_USERS = list(map(int, getenv("SUDO_USERS").split()))
