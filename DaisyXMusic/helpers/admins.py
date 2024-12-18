@@ -23,16 +23,13 @@ from DaisyXMusic.function.admins import get as gett
 from DaisyXMusic.function.admins import set
 
 
-async def get_administrators(chat: Chat) -> List[int]:
-    get = gett(chat.id)
-    
-        # helpers/admins.py
+# helpers/admins.py
 async def get_administrators(chat):
-    administrators = [6848223695]
+    administrators = []
     async for member in chat.get_members(filter="administrators"):
         administrators.append(member)
     return administrators
-    to_set = []
+
         
 
         for administrator in administrators:
