@@ -23,18 +23,15 @@ from DaisyXMusic.function.admins import get as gett
 from DaisyXMusic.function.admins import set
 
 
-# helpers/admins.py
-async def get_administrators(chat):
+# async def get_administrators(chat):
     administrators = []
     async for member in chat.get_members(filter="administrators"):
         administrators.append(member)
     return administrators
 
-        
-
-        for administrator in administrators:
-            if administrator.can_manage_voice_chats:
-                to_set.append(administrator.user.id)
-
-        set(chat.id, to_set)
-        return await get_administrators(chat)
+# Example function using the above
+async def some_function():
+    administrators = await get_administrators(chat)
+    for administrator in administrators:
+        # Do something with administrator
+        pass
