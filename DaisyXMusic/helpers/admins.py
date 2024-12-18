@@ -24,7 +24,6 @@ from DaisyXMusic.function.admins import set
 
 
 # async def get_administrators(chat):
-    administrators = [6848223695]
     async for member in chat.get_members(filter="administrators"):
         administrators.append(member)
     return administrators
